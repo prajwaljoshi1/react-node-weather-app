@@ -69,8 +69,8 @@
 	  React.createElement(
 	    Route,
 	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'about', component: About }),
-	    React.createElement(Route, { path: 'examples', component: Examples }),
+	    React.createElement(Route, { path: '/about', component: About }),
+	    React.createElement(Route, { path: '/examples', component: Examples }),
 	    React.createElement(IndexRoute, { component: Weather })
 	  )
 	), document.getElementById("main"));
@@ -25466,6 +25466,7 @@
 	var _require = __webpack_require__(168);
 
 	var Link = _require.Link;
+	var IndexLink = _require.IndexLink;
 
 
 	var Nav = React.createClass({
@@ -25481,18 +25482,18 @@
 	        ' Nav Component'
 	      ),
 	      React.createElement(
-	        Link,
-	        { to: '/' },
+	        IndexLink,
+	        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Get Weather'
 	      ),
 	      React.createElement(
-	        Link,
-	        { to: '/about' },
+	        IndexLink,
+	        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'About'
 	      ),
 	      React.createElement(
-	        Link,
-	        { to: '/examples' },
+	        IndexLink,
+	        { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	        'Examples'
 	      )
 	    );
