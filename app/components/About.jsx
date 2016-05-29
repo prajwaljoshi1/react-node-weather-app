@@ -9,4 +9,10 @@ var About = React.createClass({
     }
 });
 
+var About = (props) => {
+  return(
+    <h3>Aabut Componets</h3>
+  )
+}
+
 module.exports = About;

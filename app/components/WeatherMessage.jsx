@@ -9,4 +9,12 @@ var WeatherMessage = React.createClass({
     }
 });
 
+
+// var WeatherMessage = ({temp, location}) => {
+//  // var {temp, location} = props;
+//   return(
+//       <h3>The weather is {temp} in {location}</h3>
+//   );
+// }
+
 module.exports = WeatherMessage;
